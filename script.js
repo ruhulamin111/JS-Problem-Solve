@@ -1,4 +1,5 @@
 // 1. print the number which is divisable by 5 
+
 /* function divisable(num) {
     let number = [], count = 0;
     for (let i = 1; i < num; i++) {
@@ -12,6 +13,7 @@ const result = divisable(50);
 console.log(result); */
 
 // 2. print the averge number which is divisable by 5 
+
 /* function divisable(num) {
     let sum = 0, count = 0;
     for (let i = 1; i < num; i++) {
@@ -28,6 +30,7 @@ console.log(result);
  */
 
 // 3. calculate the price of book price less than or equal 5 kg it's per price 2000 and more than 5 kg it's price 1500 ; 
+
 /* function buyBook(quantity) {
     if (typeof quantity != 'number') {
         return 'Please input a number'
@@ -47,8 +50,9 @@ console.log(result);
 const result = buyBook(0);
 console.log(result); */
 
-// 3. calculate the price of electricity bill first 100 kw price is 5 tk and more than 100 kw then the price is 6tk  per unit 
-function billOfElectricity(unit) {
+// 4. calculate the price of electricity bill first 100 kw price is 5 tk and more than 100 kw then the price is 6tk  per unit 
+
+/* function billOfElectricity(unit) {
     if (typeof unit != 'number') {
         return 'Please input a number'
     }
@@ -68,4 +72,22 @@ function billOfElectricity(unit) {
     return bill;
 }
 const result = billOfElectricity(120);
+console.log(result); */
+
+// 5. find a A+ marks in a result sheet  
+
+function checkGPA(marks) {
+    if (Array.isArray(marks) == false) {
+        return 'Please push an array'
+    }
+    for (let i = 0; i < marks.length; i++) {
+        let element = marks[i];
+        if (element >= 80) {
+            return true;
+        }
+    }
+    return false;
+}
+const result = checkGPA(70);
 console.log(result);
+
