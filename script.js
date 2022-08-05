@@ -76,6 +76,7 @@ console.log(result); */
 
 // 5. find a A+ marks in a result sheet  
 
+/* 
 function checkGPA(marks) {
     if (Array.isArray(marks) == false) {
         return 'Please push an array'
@@ -89,5 +90,23 @@ function checkGPA(marks) {
     return false;
 }
 const result = checkGPA(70);
+console.log(result); */
+
+// 6. find a largest number in a array. 
+
+function largestNumber(array) {
+    if (Array.isArray(array) == false) {
+        return 'Please push an array'
+    }
+    let largest = array[0];
+    for (let i = 0; i < array.length; i++) {
+        let element = array[i];
+        if (element >= largest) {
+            largest = element;
+        }
+    }
+    return largest;
+}
+const result = largestNumber([34, 67, 98, 32, 6, 37]);
 console.log(result);
 
