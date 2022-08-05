@@ -27,17 +27,16 @@ const result = divisable(60);
 console.log(result);
  */
 
-// 3. print the  number  of vowels in a string 
-function vowelCheck(sentence) {
-    let count = 0;
-    for (let i = 1; i < sentence.length; i++) {
-        let element = sentence[i];
-        if (element == 'a' || element == 'e' || element == 'i' || element == 'o' || element == 'u') {
-            count = count + 1;
-        }
+// 3. calculate the price of book price less than or equal 5 kg it's per price 2000 and more than 5 kg it's price 1500 ; 
+function buyBook(quantity) {
+    let price = 0;
+    if (quantity <= 5) {
+        price = quantity * 2000;
     }
-    return count;
+    else {
+        price = quantity * 1500
+    }
+    return price;
 }
-const sentence = 'My bengal of gold i love you'
-const result = vowelCheck(sentence);
+const result = buyBook(5);
 console.log(result);
